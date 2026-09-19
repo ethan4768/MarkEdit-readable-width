@@ -60,5 +60,9 @@ function createWidthTheme(width: number | null) {
       margin: '0 auto',
       maxWidth: `${width}px`,
     },
+    'body:has(&) > .markdown-body.overlay > *': {
+      marginInline: 'auto',
+      maxWidth: `${width}px`,
+    },
   });
 }
